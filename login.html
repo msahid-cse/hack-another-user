@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Hack Another User</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="toggleTheme">🌙/☀️</button>
+    </div>
+    <div class="container">
+        <h1>💻 Hack Another User 💻</h1>
+        <div id="login">
+            <h2>Login</h2>
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPin" placeholder="4-digit PIN" maxlength="4" required>
+            <button id="loginBtn">Login</button>
+            <div id="hackInfo" style="display:none;"></div>
+            <a href="register.html">New user? Register here</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+    // Only show login form
+    document.getElementById('auth')?.remove();
+    document.getElementById('mainContent')?.remove();
+    </script>
+</body>
+</html>

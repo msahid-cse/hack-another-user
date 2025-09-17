@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Hack Another User</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="toggleTheme">🌙/☀️</button>
+    </div>
+    <div class="container">
+        <h1>💻 Hack Another User 💻</h1>
+        <div id="register">
+            <h2>Register</h2>
+            <input type="email" id="regEmail" placeholder="Email" required>
+            <input type="password" id="regPin" placeholder="4-digit PIN" maxlength="4" required>
+            <button id="registerBtn">Register</button>
+            <a href="login.html">Already registered? Login here</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+    // Only show register form
+    document.getElementById('auth')?.remove();
+    document.getElementById('mainContent')?.remove();
+    </script>
+</body>
+</html>
